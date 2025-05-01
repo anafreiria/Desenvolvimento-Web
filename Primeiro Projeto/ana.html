@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html> 
+
+	<head>
+		<title>A Ana é linda</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		Esse é um texto <strong>negrito</strong><br>
+		Esse é um texto <em>italico</em><br>
+		Esse é um texto <u>underline</u><br>
+		Esse é um texto <strike>errado</strike><br>
+
+		<hr>
+
+		<h2>A empresa</h2>
+		Somos uma empresa de transpote
+
+		<hr>
+
+		<h2>Vantagens de ser cliente</h2>
+
+		<ol type="1">
+			<li>Atendimento <strong>rápido</strong></li>
+			<li>muitas cidades</li>
+		</ol>
+
+		<hr>
+
+		<h2>O que os clientes estão dizendo:</h2>
+		<em>"Gostei demias do atendimento, foi muito rápido e com certeza irei voltar!"</em><br>
+		<strong>Maria Almeida</strong>
+
+		<hr>
+
+		<h2>Mapa do site</h2>
+		<!-- circle, square, disc -->
+		<ul type="circle"> 
+			<li>Home</li>
+			<li>Quem somos</li>
+			<li>Contato</li>
+		</ul>
+
+		<hr>
+		
+		<h2>
+			Perguntas
+		</h2>
+		<!-- Lista ordenada: 1, A, a I  -->
+		<ol type="A">
+			<li>Algum problema?</li>
+			<li>Entrega atrasada?</li>
+		</ol>
+
+		<hr>
+
+		<!-- Inserção de imagem -->
+		<img src="imagem/sedex.jpg" width="400" height="200">
+
+
+		<!--Criação de tabelas-->
+		<h2>PRODUTOS</h2>
+
+		<table border="2" width="300">
+			<tr>
+				<th>Código</th>
+				<th>Produto</th>
+				<th>Preço</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>Livro</td>
+				<td>R$45,00</td>			
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>Bola</td>
+				<td>R$20,00</td>			
+			</tr>
+
+			<tr>
+				<td rowspan="2">Desconto</td>
+				<td colspan="2">Cupom1 -R$10</td>
+			</tr>
+
+			<tr>
+			
+				<td colspan="2">Cupom1 -R$13</td>
+			</tr>
+			
+		</table>
+		
+
+
+		<h2>Login</h2>
+		<form action="processa.php"><!-- Não usado ainda --->
+			
+			Login:<br>
+			<input type="text" name="login"><br>
+
+			Senha:<br>
+			<input type="password" name="senha"><br>
+
+			<input type="button" name="Logar"><br>
+
+			<!-- Vai ser usado quando eu for processar os dados em outro lugar -->
+			<input type="submit" name="Logar"><br>
+
+		</form>
+
+
+		<h2> Cadastre-se</h2>
+
+		<form>
+			Login:<br>
+			<input type="text" name="login"><br>
+
+			Sexo: <br>
+			<input type="radio" name="sexo" value="m"> Masculino<br>
+			<input type="radio" name="sexo" value="F"> Feminino<br>
+
+
+			Interesses<br>
+			<input type="checkbox" name="interesses">Futebol<br>
+			<input type="checkbox" name="interesses">Moda<br>
+
+			Estado<br>
+			<select>
+				<option value="sp">SP</option>
+				<option value= "mg">MG</option>
+				<option>RJ</option>
+				<option>GO</option><br>
+			</select>
+
+			Observações: <br>
+			<textarea></textarea><br>
+
+			<input type="submit" value="Cadastrar">
+
+		</form>
+
+
+
+	</body>
+
+</html> 
